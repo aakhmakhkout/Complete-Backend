@@ -1,0 +1,219 @@
+# Backend Learning Roadmap
+
+**Primary resource:** Sheryians Complete Backend One Shot  
+**Video:** https://youtu.be/0IciwnJ6PJI  
+**Stack:** JavaScript, Node.js, Express.js, MongoDB, Mongoose  
+**Daily lesson target:** 30–50 minutes per day (video or supplementary learning)  
+**Total daily study, including practice:** Approximately 3–4 hours
+
+Follow the video chronologically. Each day, study only the assigned segment or supplementary topic for 30–50 minutes. If the listed video segment is shorter than 30 minutes, use the remaining lesson time to review that day's concepts or consult the linked official documentation. If a segment takes longer than 50 minutes to understand, split it across days rather than rushing. Use supplementary resources only for prerequisites or important topics the video does not cover deeply. Do not follow another complete backend course simultaneously.
+
+---
+
+## Phase 1: Backend and Node.js foundations
+
+**Days 1–7**
+
+| Day | Video timestamp | Topics |
+|---|---|---|
+| 1 | 00:00–00:51 | Course overview; what is a server? |
+| 2 | 00:51–03:10 | Node.js installation, runtime, V8 engine |
+| 3 | 03:10–05:03 | npm, packages, package.json, dependencies |
+| 4 | 05:03–12:15 | Project structure, node_modules, package-lock.json |
+| 5 | Supplement | Node.js vs browser JavaScript; CommonJS vs ES Modules |
+| 6 | Supplement | Node.js built-in modules: fs, path, os |
+| 7 | Supplement | Asynchronous Node.js, callbacks, Promises, async/await revision |
+
+**Prerequisite:** Understand the Node.js event loop at a basic level before moving deeper into server-side asynchronous operations.
+
+## Phase 2: Express.js and REST APIs
+
+**Days 8–15**
+
+| Day | Video timestamp | Topics |
+|---|---|---|
+| 8 | 12:15–19:45 | Express installation, server creation, app.listen() |
+| 9 | Supplement | HTTP fundamentals, request-response lifecycle |
+| 10 | 19:45–30:00 | APIs, REST APIs, resources, endpoints |
+| 11 | Supplement | HTTP methods: GET, POST, PUT, PATCH, DELETE |
+| 12 | Supplement | HTTP status codes, headers, request body |
+| 13 | 30:00–43:33 | Express routing, route parameters, query parameters |
+| 14 | 43:33–51:02 | Notes API, Postman, API testing |
+| 15 | Supplement | Express middleware fundamentals and request lifecycle |
+
+**Must understand before proceeding:**
+- `req.params`
+- `req.query`
+- `req.body`
+- `res.send()` and `res.json()`
+- HTTP status codes
+- JSON data format
+
+## Phase 3: MongoDB and database fundamentals
+
+**Days 16–25**
+
+| Day | Video timestamp | Topics |
+|---|---|---|
+| 16 | 51:02–01:05:00 | MongoDB introduction, Atlas setup, database connection |
+| 17 | Supplement | SQL vs NoSQL, database, collection, document |
+| 18 | 01:05:00–01:20:00 | Mongoose, schemas, models |
+| 19 | Supplement | MongoDB CRUD operations and Mongoose methods |
+| 20 | 01:20:00–01:35:00 | Saving and retrieving notes from MongoDB |
+| 21 | Supplement | ObjectId, data types, schema validation |
+| 22 | Supplement | One-to-one and one-to-many relationships |
+| 23 | Supplement | Mongoose populate and references |
+| 24 | Supplement | MongoDB filtering, sorting and pagination |
+| 25 | Supplement | Database indexes and basic query optimization |
+
+**Must understand before proceeding:**
+- Difference between MongoDB and Mongoose.
+- Schema vs model.
+- `find()`, `findOne()`, `findById()`.
+- `create()`, `save()`, `findByIdAndUpdate()`, `findByIdAndDelete()`.
+
+## Phase 4: Full-stack backend project
+
+**Days 26–32**
+
+| Day | Video timestamp | Topics |
+|---|---|---|
+| 26 | 01:43:39–02:20:00 | Project overview, application architecture, backend requirements |
+| 27 | 02:20:00–03:01:50 | Project backend implementation, database and API structure |
+| 28 | 03:01:50–03:04:19 | Cloud services setup and backend configuration |
+| 29 | 03:04:19–03:30:00 | Frontend project structure and application flow |
+| 30 | 03:30:00–04:00:53 | Frontend implementation and API preparation |
+| 31 | 04:00:53–04:15:45 | Frontend-backend integration, API requests |
+| 32 | Supplement | CORS, environment variables, frontend API error handling |
+
+**Must understand before proceeding:**
+- How frontend communicates with backend.
+- API base URLs.
+- CORS and preflight requests.
+- Environment variables.
+- JSON request and response handling.
+
+## Phase 5: Authentication and authorization
+
+**Days 33–40**
+
+| Day | Video timestamp | Topics |
+|---|---|---|
+| 33 | 04:15:45–04:34:05 | Authentication vs authorization, authentication flow |
+| 34 | 04:34:05–04:46:45 | Token-based authentication, stateless authentication |
+| 35 | 04:46:45–05:14:00 | Authentication implementation, password hashing |
+| 36 | 05:14:00–05:21:55 | JWT structure, signing, verification, expiration |
+| 37 | 05:21:55–05:31:56 | Cookies, cookie-based authentication |
+| 38 | 05:31:56–05:59:53 | Registration API, login flow, token handling |
+| 39 | Supplement | Access tokens vs refresh tokens, token rotation |
+| 40 | Supplement | HttpOnly, Secure, SameSite cookies, CSRF and XSS |
+
+**Must understand before proceeding:**
+- Hashing vs encryption.
+- JWT payload, signature and expiration.
+- Authentication vs authorization.
+- Password security.
+- Cookie security attributes.
+- Why JWT should never contain sensitive information.
+
+## Phase 6: Real-world backend project
+
+**Days 41–47**
+
+| Day | Video timestamp | Topics |
+|---|---|---|
+| 41 | 05:59:53–06:35:00 | Spotify project overview and backend architecture |
+| 42 | 06:35:00–07:00:00 | Backend implementation and API development |
+| 43 | 07:00:00–07:23:34 | Database integration and project completion |
+| 44 | 07:23:34–08:03:44 | Express middleware, middleware chaining |
+| 45 | Supplement | Centralized error handling, custom error classes |
+| 46 | Supplement | MVC architecture, controllers, services and models |
+| 47 | Supplement | Input validation, sanitization and authorization checks |
+
+**Must understand before proceeding:**
+- Middleware execution order.
+- `next()` and error middleware.
+- Separation of routes, controllers and services.
+- Centralized error handling.
+- Request validation.
+
+## Phase 7: Testing and backend security
+
+**Days 48–53**
+
+| Day | Video timestamp | Topics |
+|---|---|---|
+| 48 | 08:03:44–08:10:47 | Jest, Supertest, automated API testing |
+| 49 | 08:10:47 onwards | Express Validator, request validation |
+| 50 | Supplement | Unit testing vs integration testing |
+| 51 | Supplement | Rate limiting, brute-force protection |
+| 52 | Supplement | NoSQL injection, secure database queries |
+| 53 | Supplement | Logging, debugging and error monitoring |
+
+**Must understand before proceeding:**
+- Test cases and assertions.
+- Testing successful and failed API requests.
+- Testing authentication-protected routes.
+- Validating untrusted user input.
+
+## Phase 8: Essential topics missing from the video
+
+**Days 54–67**
+
+| Day | Topic | What to learn |
+|---|---|---|
+| 54 | Advanced Node.js | Event loop, non-blocking I/O, worker threads |
+| 55 | Node.js architecture | Streams, buffers, EventEmitter |
+| 56 | Advanced Express | Modular routing, application architecture |
+| 57 | MongoDB optimization | Indexing, aggregation pipeline |
+| 58 | SQL fundamentals | Tables, rows, joins, primary and foreign keys |
+| 59 | PostgreSQL | Installation, queries and database connection |
+| 60 | Database design | Normalization, relationships, transactions |
+| 61 | Redis | Caching, TTL, cache invalidation |
+| 62 | Docker | Images, containers, Dockerfile, Docker Compose |
+| 63 | Deployment | Hosting backend, database and environment variables |
+| 64 | Production concepts | Logging, monitoring, graceful shutdown |
+| 65 | API documentation | Swagger / OpenAPI |
+| 66 | CI/CD | GitHub Actions, automated testing and deployment |
+| 67 | System design basics | Load balancing, caching, scalability |
+
+---
+
+## Final learning checkpoints
+
+Do not move forward just because you have completed a video chapter.
+
+| Checkpoint | Independent outcome |
+|---|---|
+| Day 15 | Create an Express REST API |
+| Day 25 | Build a MongoDB-backed CRUD API |
+| Day 40 | Implement secure authentication |
+| Day 47 | Structure a maintainable backend |
+| Day 53 | Test and secure API endpoints |
+| Day 67 | Understand additional production technologies |
+
+## Daily study allocation
+
+**The 30–50 minute limit applies to the day's lesson/video learning.** Practice is additional.
+
+| Activity | Time |
+|---|---:|
+| Assigned video segment or supplementary lesson | 30–50 min |
+| Practical coding and implementation | 90–120 min |
+| Independent exercises | 30–45 min |
+| Revision and debugging | 30 min |
+| **Total** | **Approximately 3–4 hours** |
+
+If the day's assigned video timestamps cover less than 30 minutes, do not jump ahead just to fill time. Revisit the concepts, code along again, or use official documentation for that same day's topics. Keep the lesson target to 30–50 minutes.
+
+## Learning resources
+
+Use these as references when a concept needs clarification. They are not additional courses to follow every day.
+
+- [Sheryians Complete Backend One Shot](https://youtu.be/0IciwnJ6PJI)
+- [Node.js Learn](https://nodejs.org/en/learn)
+- [MDN HTTP documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+- [Express.js documentation](https://expressjs.com/)
+- [MongoDB University](https://learn.mongodb.com/)
+
+**Note:** Video timestamps are based on the chapter markers supplied by the learner. Supplementary days are independent study sessions, not additional video chapters. The 67-day plan is a learning target, not a guarantee of job readiness.
