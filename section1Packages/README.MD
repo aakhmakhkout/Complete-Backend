@@ -1,7 +1,3 @@
-from pathlib import Path
-
-content = """# Node.js Packages & NPM
-
 ## 📦 What is a Package?
 
 A **package** is a reusable piece of software, usually containing code written by other developers, that we can install and use in our own projects instead of building everything from scratch.
@@ -659,8 +655,3 @@ After understanding packages and dependencies, the next useful NPM/Node.js conce
 - CommonJS vs ES Modules
 - `require()` vs `import`
   """
-
-path = Path("/mnt/data/nodejs-packages-and-npm-readme.md")
-path.write_text(content, encoding="utf-8")
-
-print(f"Created: {path}")
